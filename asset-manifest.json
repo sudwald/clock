@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/clock/static/css/main.67ac9169.chunk.css",
-    "main.js": "/clock/static/js/main.ea0ad31b.chunk.js",
-    "main.js.map": "/clock/static/js/main.ea0ad31b.chunk.js.map",
+    "main.css": "/clock/static/css/main.27bc21b3.chunk.css",
+    "main.js": "/clock/static/js/main.2df9446e.chunk.js",
+    "main.js.map": "/clock/static/js/main.2df9446e.chunk.js.map",
     "runtime-main.js": "/clock/static/js/runtime-main.cc038e79.js",
     "runtime-main.js.map": "/clock/static/js/runtime-main.cc038e79.js.map",
     "static/js/2.fb9da229.chunk.js": "/clock/static/js/2.fb9da229.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.eba8a79d.chunk.js": "/clock/static/js/3.eba8a79d.chunk.js",
     "static/js/3.eba8a79d.chunk.js.map": "/clock/static/js/3.eba8a79d.chunk.js.map",
     "index.html": "/clock/index.html",
-    "static/css/main.67ac9169.chunk.css.map": "/clock/static/css/main.67ac9169.chunk.css.map",
+    "static/css/main.27bc21b3.chunk.css.map": "/clock/static/css/main.27bc21b3.chunk.css.map",
     "static/js/2.fb9da229.chunk.js.LICENSE.txt": "/clock/static/js/2.fb9da229.chunk.js.LICENSE.txt",
     "static/media/10C.9ed3d91b.png": "/clock/static/media/10C.9ed3d91b.png",
     "static/media/10D.7ae9eea7.png": "/clock/static/media/10D.7ae9eea7.png",
@@ -64,16 +64,16 @@
     "static/media/QD.028ad7d4.png": "/clock/static/media/QD.028ad7d4.png",
     "static/media/QH.4bc634e4.png": "/clock/static/media/QH.4bc634e4.png",
     "static/media/QS.6ff68c33.png": "/clock/static/media/QS.6ff68c33.png",
-    "static/media/arrow.f3234251.png": "/clock/static/media/arrow.f3234251.png",
+    "static/media/arrow.3b54619b.png": "/clock/static/media/arrow.3b54619b.png",
     "static/media/index.css": "/clock/static/media/bg.f5e4e5d6.jpg",
-    "static/media/cardrear.f1c78839.jpg": "/clock/static/media/cardrear.f1c78839.jpg",
+    "static/media/cardrear.3c30d340.jpg": "/clock/static/media/cardrear.3c30d340.jpg",
     "static/media/happyface.63b3dcf3.png": "/clock/static/media/happyface.63b3dcf3.png",
     "static/media/sadface.ffc95244.png": "/clock/static/media/sadface.ffc95244.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cc038e79.js",
     "static/js/2.fb9da229.chunk.js",
-    "static/css/main.67ac9169.chunk.css",
-    "static/js/main.ea0ad31b.chunk.js"
+    "static/css/main.27bc21b3.chunk.css",
+    "static/js/main.2df9446e.chunk.js"
   ]
 }
