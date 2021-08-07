@@ -3,7 +3,7 @@ import cardRear from './resources/cards/cardrear.jpg'
 import CardInPlay from './CardInPlay';
 import CardPiles from './CardPiles';
 import { getCards } from './CardSlice.js';
-import { getPlayInfo, postWin } from './PlaySlice.js';
+import { getPlayInfo, postPlay } from './PlaySlice.js';
 import arrow from './resources/arrow.png';
 import sadface from './resources/sadface.png';
 import happyface from './resources/happyface.png';
@@ -37,10 +37,9 @@ function ClockDiv(props) {
         emojiDisplay = {display: 'inline'}
     }
 
-    if (cardInfo[startIndex].flipped && playInfo.lastPlayed === 14 && props.index === 13) {
-        happy = false
+    if (cardInfo[startIndex].flipped && playInfo.lastPlayed === 14 && props.index === 13 && cardInfo.filter(card => card.flipped).length === 52) {
+        happy = false;
         emojiDisplay = {display: 'inline'}
-        dispatch(postWin())
     }
 
     if (props.index === playInfo.lastPlayed || playInfo.lastPlayed === 14 && props.index === 13) {

@@ -65,12 +65,14 @@ const cardSlice = createSlice({
             let tempi = 0
             
             for (let i=0; i<52; i++) {
-                state[i].flipped = false;
+                state[i].flipped = false
+            }
+            for (let i=0; i<52; i++) {
                 j = Math.round(Math.random() * (51))
                 tempi = state[i]
                 state[i] = state[j]
                 state[j] = tempi
-                }
+            }
         },
         flipCard: (state, action) => {
             state[action.payload].flipped = true;

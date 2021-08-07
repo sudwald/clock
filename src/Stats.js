@@ -6,10 +6,10 @@ function Stats(props) {
     const playInfo = useSelector(getPlayInfo);
 
     return(
-        <>
-            GAMES PLAYED: {playInfo.gamesPlayed}
-            GAMES WON: {playInfo.gamesWon}
-        </>
+        <div id='statsContainer'>
+            <p class='stats'>GAMES PLAYED: {playInfo.gamesPlayed}</p>
+            <p class='stats'>GAMES WON: {playInfo.gamesWon}</p>
+        </div>
     )
 }
 

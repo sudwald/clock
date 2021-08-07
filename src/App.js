@@ -1,6 +1,6 @@
 import './App.css';
 import { getCards, randomiseCards } from './CardSlice.js';
-import { postLoss, postWin } from './PlaySlice.js'
+import { postPlay, postWin, updateLastPlayed } from './PlaySlice.js'
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import blank from './resources/cards/blank.png'
@@ -19,15 +19,13 @@ function App() {
   }
 
   if (cardInfo.filter(card => card.flipped).length === 52) {
-    handleWin()
-  }
-
-  const handleWin = () => {
     dispatch(postWin())
   }
 
   const newGame = () => {
     dispatch(randomiseCards())
+    dispatch(postPlay())
+    dispatch(updateLastPlayed(13))
   }
 
   useEffect(() => {

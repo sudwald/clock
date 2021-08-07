@@ -5,25 +5,22 @@ const playSlice = createSlice({
     initialState: {
         lastPlayed: 13,
         gamesPlayed: 0,
-        gamesWon: 0,
-        gamesLost: 0
+        gamesWon: 0
     },
     reducers: {
         updateLastPlayed: (state, action) => {
             state.lastPlayed = action.payload
         },
+        postPlay: (state, action) => {
+            state.gamesPlayed++
+        },
         postWin: (state, action) => {
-            state.gamesPlayed++
             state.gamesWon++
-        },
-        postLoss: (state, action) => {
-            state.gamesPlayed++
-            state.gamesLost++
-        },
+        }
     }
 })
 
-export const { updateLastPlayed, postWin, postLoss } = playSlice.actions;
+export const { updateLastPlayed, postPlay, postWin } = playSlice.actions;
 
 export const getPlayInfo = state => state.playInfo;
 
