@@ -8,8 +8,8 @@
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap: 2%;
-  height:96vh;
-  width:96vw;
+  height:92vh;
+  width:94vw;
   justify-items:center;
   padding:2vh 2vw;
   font-family: "Poiret One";
@@ -23,6 +23,7 @@ h1 {
 
 h2 {
   font-size: 2vw;
+  margin: 2vh 0;
 }
 
 p {
@@ -36,8 +37,8 @@ p {
   justify-items: center;
   margin: auto 0;
   align-self:center;
-  height:90%;
-  padding:0px;
+  height:88%;
+  padding:0;
 }
 
 .cardPile {
@@ -74,7 +75,7 @@ p {
 }
 
 .stackedCard {
-  margin-top: -90px;
+  margin-top: -13.5vh;
   width:100%;
   height: auto;
 }
@@ -183,7 +184,7 @@ p {
 
 ul {
   text-align: justify;
-  padding-left:10%;
+  padding-left:5%;
   padding-right:5%;
   font-weight: bold;
 }
@@ -277,6 +278,10 @@ button:hover {
 
 /* MEDIA QUERY FOR PORTRAIT MOBILE */
 @media screen and (max-width: 500px) {
+  body {
+    overflow-y: auto;
+    overflow-x:auto;
+  }
   .App-main {
     grid-template-columns: 1fr;
     grid-template-areas: "clock" "info";
@@ -289,6 +294,7 @@ button:hover {
   #info {
     grid-area: info;
     width:100%;
+    height:88%;
   }
   h1 {
     font-size: 10vw;

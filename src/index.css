@@ -7,6 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(./resources/bg.jpg);
   background-size: cover;
+  overflow-y: hidden;
+  overflow-x:hidden;
 }
 
 code {
