@@ -46,9 +46,10 @@ p {
   width:3.5vw;
 }
 
-#arrow {
+#arrow {  
   position:absolute;
-  padding-left:19vh;
+  padding-left:30vh;
+  z-index: -1;
   height: 3vh;
   width:auto;
   transform: rotate(90deg);
@@ -256,22 +257,69 @@ button:hover {
     height: auto;
   }
   #arrow {
-    position:absolute;
-    padding-left:19vh;
+    padding-left:37vh;
     height: 4.5vh;
-    width:auto;
-    transform: rotate(90deg);
+    z-index: -1;
   }
   #statsContainer {
     padding-top:0;
   }
+  #btnNewGame {
+    grid-column: 8 / span 5;
+    grid-row: 3 / span 3;
+    height: 5vh;
+    width: 10.5vw;
+    align-self:center;
+    font-size: 1.5vw;
+    padding-top:0;
+  }
 }
 
-/* @media screen and (max-width: 992px) { */
-  /* .App-main { */
-    /* grid-template-columns: 1fr; */
-  /* } */
-  /* #clockContainer { */
-    /* padding-bottom: 10%; */
-  /* } */
-/* } */
+/* MEDIA QUERY FOR PORTRAIT MOBILE */
+@media screen and (max-width: 500px) {
+  .App-main {
+    grid-template-columns: 1fr;
+    grid-template-areas: "clock" "info";
+    width:96%;
+  }
+  #gamePlayArea {
+    grid-area: clock;
+    height:90%;
+  }
+  #info {
+    grid-area: info;
+    width:100%;
+  }
+  h1 {
+    font-size: 10vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 3.5vw;
+  }
+  ul {
+    font-size: 3.5vw;
+  }
+  #clockContainer {
+    padding-bottom: 10%;
+    grid-template-columns: repeat(19, 5.22%);
+    grid-template-rows: repeat(11, 10%);
+  }
+  .stackedCard {
+    margin-top: -130%;
+    width:100%;
+    height: auto;
+  }
+  #arrow {
+    padding-left:24vh;
+    height: 3.5vh;
+    z-index: -1;
+  }
+  #btnNewGame {
+    height: 3vh;
+    width: 20vw;
+    font-size:3vw;
+  }
+}
