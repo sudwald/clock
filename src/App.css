@@ -222,6 +222,51 @@ button:hover {
   font-weight:bold;
 }
 
+@media screen and (orientation:landscape) and (max-width: 992px) {
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 1.75vw;
+  }
+  p {
+    font-size: 1.5vw;
+  }
+  ul {
+    font-size: 1.5vw;
+  }
+  #clockContainer {
+    display:grid;
+    grid-template-columns: repeat(19, 5.22%);
+    grid-template-rows: repeat(11, 9%);
+    justify-items: center;
+    margin: auto 0;
+    align-self:center;
+    height:78%;
+    padding:0px;
+    align-self:center;
+  }
+  .stackedCard {
+    margin-top: -145%;
+    width:100%;
+    height: auto;
+  }
+  .bottomCard {
+    width:100%;
+    height: auto;
+  }
+  #arrow {
+    position:absolute;
+    padding-left:19vh;
+    height: 4.5vh;
+    width:auto;
+    transform: rotate(90deg);
+  }
+  #statsContainer {
+    padding-top:0;
+  }
+}
+
 /* @media screen and (max-width: 992px) { */
   /* .App-main { */
     /* grid-template-columns: 1fr; */
