@@ -11,7 +11,7 @@ function Stats(props) {
     return(
         <>
         <div id='statsContainer'>
-            <p class='stats'>GAMES PLAYED: {playInfo.gamesPlayed}</p>
+            <p class='stats'>THIS IS GAME: {playInfo.gamesPlayed}</p>
             <p class='stats'>GAMES WON: {playInfo.gamesWon}</p>
             <p class='stats'>WIN PERCENTAGE: {`${winPercentage}%`}</p>
         </div>
