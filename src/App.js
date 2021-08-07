@@ -55,10 +55,8 @@ function App() {
             </ul>
         </div>
         <div id='gamePlayArea'>
-          <button onClick={newGame}>New Game</button>
-          <br/>
-          <Stats />
         <div id='clockContainer'>
+          <button id="btnNewGame" onClick={newGame}>New Game</button>
           {
             clockDivs.map(div => {
               return <ClockDiv id={`clock${div}`} index={div} />
@@ -73,6 +71,7 @@ function App() {
             }
           </div>
         </div>
+        <Stats />
         </div>
       </main>
       <footer>

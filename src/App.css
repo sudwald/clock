@@ -69,6 +69,7 @@ p {
   align-items: center;
   width:70%;
   height:90%;
+  padding-top:7%;
 }
 
 .stackedCard {
@@ -173,6 +174,12 @@ p {
   margin-left:10%;
 }
 
+#btnNewGame {
+  grid-column: 9 / span 3;
+  grid-row: 4 / span 1;
+  align-self:center;
+}
+
 ul {
   text-align: justify;
   padding-left:10%;
@@ -186,8 +193,8 @@ li {
 
 button {
   background-color: white;
-  width: 10vw;
-  height: 5vh;
+  width: 8vw;
+  height: 4vh;
   font-family: "Poiret One";
   font-weight: bold;
   font-size: 2.5vh;
@@ -199,17 +206,20 @@ button:hover {
 }
 
 #statsContainer {
-  display:grid;
-  width: 47%;
-  height: 3%;
+  display:inline-flex;
   margin: 0.5% auto;
-  grid-template-columns: 1fr 1fr;
+  width:100%;
   gap: 3%;
-  padding: 1%;
+  justify-content: center;
+  padding-top:2.5%;
 }
 
 .stats {
-  margin:0;
+  margin: 0;
+}
+
+#odds {
+  font-weight:bold;
 }
 
 @media screen and (max-width: 992px) {

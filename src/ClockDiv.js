@@ -35,11 +35,13 @@ function ClockDiv(props) {
     if (cardInfo.filter(card => card.flipped).length === 52 && props.index === 13) {
         happy = true
         emojiDisplay = {display: 'inline'}
+        arrowDisplay = {display: 'none'}
     }
 
-    if (cardInfo[startIndex].flipped && playInfo.lastPlayed === 14 && props.index === 13 && cardInfo.filter(card => card.flipped).length === 52) {
+    if (cardInfo[startIndex].flipped && playInfo.lastPlayed === 14 && props.index === 13 && cardInfo.filter(card => card.flipped).length < 52) {
         happy = false;
         emojiDisplay = {display: 'inline'}
+        arrowDisplay = {display: 'none'}
     }
 
     if (props.index === playInfo.lastPlayed || playInfo.lastPlayed === 14 && props.index === 13) {
