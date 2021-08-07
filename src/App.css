@@ -222,11 +222,11 @@ button:hover {
   font-weight:bold;
 }
 
-@media screen and (max-width: 992px) {
-  .App-main {
-    grid-template-columns: 1fr;
-  }
-  #clockContainer {
-    padding-bottom: 10%;
-  }
-}
+/* @media screen and (max-width: 992px) { */
+  /* .App-main { */
+    /* grid-template-columns: 1fr; */
+  /* } */
+  /* #clockContainer { */
+    /* padding-bottom: 10%; */
+  /* } */
+/* } */
