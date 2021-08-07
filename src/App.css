@@ -56,7 +56,7 @@ p {
 
 #emoji {
   position:absolute;
-  bottom:45%;
+  bottom:50%;
   height: 10vh;
   width:auto;
   transform: rotate(90deg);
