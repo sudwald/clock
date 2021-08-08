@@ -61,7 +61,6 @@ function ClockDiv(props) {
 
     return(
         <div className='clockDiv' id={props.id}>
-            <img id={'arrow'} src={arrow} style={arrowDisplay} />
             <img id={'emoji'} src={happy? happyface : sadface} style={emojiDisplay} />
             {
                 flippedCards.map(card => {
@@ -73,6 +72,7 @@ function ClockDiv(props) {
                     return <CardInPlay className={card === startIndex? 'bottomCard' : 'stackedCard'} id={card} src={cardInfo[card].flipped? cardInfo[card].SRC : cardRear} flippable={flippable === card? true : false} index={props.index} ownPos={cardInfo[card].ownPos}/>
                 })
             }
+            <img id={'arrow'} src={arrow} style={arrowDisplay} />
         </div>
     )
 }
