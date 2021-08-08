@@ -248,12 +248,12 @@ button:hover {
   }
   #clockContainer {
     display:grid;
-    grid-template-columns: repeat(19, 5.22%);
-    grid-template-rows: repeat(11, 9.2%);
+    grid-template-columns: repeat(19, 5.2%);
+    grid-template-rows: repeat(11, 8.8%), 3%;
+    height:90vh;
     justify-items: center;
     margin: auto 0;
     align-self:center;
-    height:76%;
     padding:0px;
     align-self:center;
   }
@@ -321,9 +321,9 @@ button:hover {
   }
   #clockContainer {
     padding-bottom: 10%;
-    grid-template-columns: repeat(19, 5.3%);
-    grid-template-rows: repeat(12, 4vh);
-    height:43vh; 
+    grid-template-columns: repeat(19, 5.2%);
+    grid-template-rows: repeat(11, 8.8%), 3%;
+    height:100vw;
   }
   .stackedCard {
     margin-top: -130%;
