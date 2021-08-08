@@ -278,7 +278,7 @@ button:hover {
     height: 5vh;
     width: 10.5vw;
     align-self: flex-end;
-    font-size: 1.5vw;
+    font-size: 70%;
     padding-top:0;
   }
 }
