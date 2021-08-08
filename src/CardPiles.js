@@ -2,7 +2,7 @@ function CardPiles(props) {
 
     return(
             <>
-            <img className='cardPile' src={props.src} />
+            <img className='cardPile' id={props.id} src={props.src} />
             </>
     )
 }

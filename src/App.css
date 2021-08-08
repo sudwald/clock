@@ -33,11 +33,11 @@ p {
 #clockContainer {
   display:grid;
   grid-template-columns: repeat(19, 5.25%);
-  grid-template-rows: repeat(11, 9.3%);
+  grid-template-rows: repeat(11, 9%);
   justify-items: center;
   margin: auto 0;
   align-self:center;
-  height:88%;
+  height:92%;
   padding:0;
 }
 
@@ -45,6 +45,18 @@ p {
   position:absolute;
   height: 10vh;
   width:3.5vw;
+}
+
+#cardPile1 {
+  margin-top: -1.5vh;
+}
+
+#cardPile2 {
+  margin-top: -3vh;
+}
+
+#cardPile3 {
+  margin-top: -4.5vh;
 }
 
 #arrow {
@@ -67,8 +79,8 @@ p {
   justify-items: center;
   align-items: center;
   width:70%;
-  height:90%;
-  padding-top:7%;
+  height:95%;
+  padding-top:25%;
 }
 
 .stackedCard {
@@ -176,7 +188,7 @@ p {
 #btnNewGame {
   grid-column: 9 / span 3;
   grid-row: 4 / span 1;
-  align-self:center;
+  align-self:flex-end;
 }
 
 ul {
@@ -250,11 +262,12 @@ button:hover {
     display:grid;
     grid-template-columns: repeat(19, 5.2%);
     grid-template-rows: repeat(11, 8.8%), 3%;
-    height:90vh;
+    height:88vh;
     justify-items: center;
     margin: auto 0;
     align-self:center;
-    padding:0px;
+    padding-top:2%;
+    padding-bottom:1.5%;
     align-self:center;
   }
   .stackedCard {
@@ -267,7 +280,7 @@ button:hover {
     height: auto;
   }
   #arrow {
-    height: 4.2vh;
+    height: 3.8vh;
   }
   #statsContainer {
     padding-top:0;
@@ -278,7 +291,7 @@ button:hover {
     height: 5vh;
     width: 12vw;
     align-self: flex-end;
-    font-size: 70%;
+    font-size: 60%;
     padding-top:0;
   }
 }
@@ -293,7 +306,7 @@ button:hover {
     grid-template-columns: 1fr;
     grid-template-areas: "clock" "info";
     width:98%;
-    padding:1vh 1vw;
+    padding:1vh 2vw;
   }
   #gamePlayArea {
     grid-area: clock;
@@ -304,8 +317,17 @@ button:hover {
     height:88%;
   }
   #emoji {
-    width: 11vw;
+    width: 10.5vw;
     height:auto;
+  }
+  #cardPile1 {
+    margin-top: -0.75vh;
+  }
+  #cardPile2 {
+    margin-top: -1.5vh;
+  }
+  #cardPile3 {
+    margin-top: -2.25vh;
   }
   h1 {
     font-size: 10vw;
@@ -320,10 +342,10 @@ button:hover {
     font-size: 3.5vw;
   }
   #clockContainer {
-    padding-bottom: 10%;
+    padding:1% 1%;
     grid-template-columns: repeat(19, 5.2%);
-    grid-template-rows: repeat(11, 8.8%), 3%;
-    height:100vw;
+    grid-template-rows: repeat(11, 9vw) 4vw;
+    height:110vw;
   }
   .stackedCard {
     margin-top: -130%;
@@ -338,7 +360,8 @@ button:hover {
     height: 3vh;
     width: 25vw;
     font-size:3vw;
-    grid-row: 12 / span 1;
+    grid-row: 13 / span 1;
+    align-self:flex-end;
   }
   .cardPile {
     height: 5vh;

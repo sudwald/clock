@@ -64,7 +64,7 @@ function ClockDiv(props) {
             <img id={'emoji'} src={happy? happyface : sadface} style={emojiDisplay} />
             {
                 flippedCards.map(card => {
-                    return <CardPiles index={props.index} src={card.SRC}/>
+                    return <CardPiles src={card.SRC} id={`cardPile${flippedCards.indexOf(card)}`}/>
                 })   
             }
             {
