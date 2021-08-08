@@ -45,9 +45,9 @@ function App() {
           <p>The chance of winning is 1 in 13. Why not play 13 games and see if you can beat the unlucky odds?!</p>
           <h2>How to play</h2>
             <ul>
-              <li>Click on the middle card to turn it over. It will place itself on the right point on the 'clock'.</li>
-              <li>Turn over the next card on that point of the clock. The same will happen.</li>
-              <li>Keep following the clock round.</li>
+              <li>Start by click the top card in the middle. It will place itself on the right point on the 'clock' - with aces at 1 o' clock, then 2, 3, and so on.</li>
+              <li>Turn over the next card on that point of the clock. That card will jump to <i>its</i> own point on the 'clock'.</li>
+              <li>Keep following the clock round. If in doubt, follow the arrow!</li>
               <li>When you hit a king, it will place itself in the middle. Your streak is broken!</li>
               <li>Turn over the next card in the middle and start again.</li>
               <li>If you find and return all the kings to their correct position on the clock, you win! :)</li>
