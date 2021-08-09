@@ -8,10 +8,10 @@
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap: 2%;
-  height:92vh;
-  width:94vw;
+  height:96vh;
+  width:96vw;
   justify-items:center;
-  padding:2vh 2vw;
+  padding:1vh 1vw;
   font-family: "Poiret One";
 }
 
@@ -30,15 +30,19 @@ p {
   font-weight:bold;
 }
 
+#gamePlayArea {
+  padding-left: 4.75%;
+  padding-right: 4.75%;
+}
+
 #clockContainer {
   display:grid;
   grid-template-columns: repeat(19, 5.25%);
-  grid-template-rows: repeat(11, 9%);
+  grid-template-rows: repeat(11, 9.2%);
   justify-items: center;
   margin: auto 0;
-  align-self:center;
-  height:92%;
-  padding:0;
+  height:88%;
+  padding-bottom:1.5%;
 }
 
 .cardPile {
@@ -187,8 +191,8 @@ p {
 
 #btnNewGame {
   grid-column: 9 / span 3;
-  grid-row: 4 / span 1;
-  align-self:flex-end;
+  grid-row: 4 / span 2;
+  align-self: center;
 }
 
 ul {
@@ -222,7 +226,7 @@ button:hover {
   width:100%;
   gap: 3%;
   justify-content: center;
-  padding-top:2.5%;
+  padding-top: 3.25%;
 }
 
 .stats {
